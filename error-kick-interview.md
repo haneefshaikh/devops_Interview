@@ -7,7 +7,6 @@
 3. how do you identify soft links and hard links?
 
 
-
 ### Shell Scripting
 
 1. write a shell script to take an EBS snapshot.
@@ -19,6 +18,13 @@
 
 ### Ansible
 
+1. What did you achieve using Ansible?
+
+2. What things do we need to consider while creating an Ansible inventory?
+
+3. What is Ansible Vault, and how can I use Vault content in the code?
+
+4. What Ansible modules do you know about?
 
 
 ### Docker
