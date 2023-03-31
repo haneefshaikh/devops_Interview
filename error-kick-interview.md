@@ -55,7 +55,10 @@ If the first character is "-", the file is a hard link.
 
 ## DOCKER
 
-### 1. How do I check the size of a specific docker image?
+### 1. How do I check the size of a specific docker image and entire container?
+
+- to check the size of specific docker image : `docker images -q <image_name>`
+- to check the size of entire container : `docker ps --size`
  
 ### 2. what is the difference between dockerfile and docker-compose file ?
 ```
