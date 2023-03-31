@@ -12,12 +12,15 @@
 `HARD LINK`
 ```
 A hard link is a reference to a file on the file system that points to the same inode (index node) as the original file. 
-When you create a hard link, you create another name for the same file, which means that both the original file and the hard link have the same contents and metadata
+When you create a hard link, you create another name for the same file, 
+which means that both the original file and the hard link have the same contents and metadata
 ```
 `SOFT LINK`
 ```
-A soft link, also known as a symbolic link or symlink, is a special type of file that points to another file or directory on the file system. 
-A soft link acts as a shortcut or alias to the original file or directory, which means that any changes made to the original file or directory will also affect the soft link.
+A soft link, also known as a symbolic link or symlink,
+is a special type of file that points to another file or directory on the file system. 
+A soft link acts as a shortcut or alias to the original file or directory,
+which means that any changes made to the original file or directory will also affect the soft link.
 ```
 
 ### 3. How do you identify soft links and hard links?
