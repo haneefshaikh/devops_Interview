@@ -3,9 +3,9 @@
 ## LINUX
 
 ### 1. How do you check for multiple processes currently running in Linux?
-```
+
 `ps -ef | grep <`PROCESS_NAME`/`SERVICE_NAME`>` also you can use `TOP` command to check the system process.
-```
+
 
 ### 2. What are soft links and hard links?
 
@@ -66,7 +66,7 @@ Dockerfile is used to create Docker images, while Docker Composr is used to mana
 ```
 
 ### 3. Write a Dockerfile to build a Python application image. What instructions should I take care of while writing the file?
-```
+
 `FROM`: It specifies the based image to use for a Docker image.
 
 `RUN`: Executes commands in Docker image, such as installing packages, updating the system, or setting environment variables.
@@ -84,7 +84,7 @@ Dockerfile is used to create Docker images, while Docker Composr is used to mana
 `ARG`: Defines variable that can be passed at build time using the '--build arg' flag.
 
 `LABEL`: Adds metadata to the Docker image, such as the maintainer, version, or description.
-```
+
 
 ## GIT
 
