@@ -50,11 +50,41 @@ If the first character is "-", the file is a hard link.
 ### 2. What things do we need to consider while creating an Ansible inventory?
 
 ### 3. What is Ansible Vault, and how can I use Vault content in the code?
+```
+Ansible Vault is a feature of Ansible that allows you to encrypt sensitive data, 
+such as passwords, SSH keys, and other credentials, that are needed by Ansible playbooks.
+
+To use Vault content in your code, you first need to create an encrypted file using the ansible-vault command. 
+"ansible-vault create mysecrets.yml"
+You can create a new file or encrypt an existing file. Once the file is encrypted, 
+you can add it to your playbook just like any other file. 
+```
 
 ### 4. What Ansible modules do you know about?
 
-### 5. Do you knows about Ansible Tower?
+`apt/yum`: for installing or removing packages.
 
+`copy/template`: for copying or templating files and directories on remote systems.
+
+`file`: for managing files and directories, such as creating or deleting them, setting permissions and ownership.
+
+`service`: for managing services on remote systems, such as starting or stopping them, enabling or disabling them, and so on.
+
+`user/group`: for managing users and groups on remote systems, such as creating or deleting them, adding or removing them from groups, and so on.
+
+`command/shell/script`: for running commands or scripts on remote systems, either as a single command or a series of commands.
+
+`cron`: for managing cron jobs on remote systems, such as creating or deleting them, modifying their schedule, and so on.
+
+`docker_container`: for managing Docker containers on remote systems, such as starting or stopping them, creating or deleting them, and so on.
+
+`ec2`: for managing Amazon Web Services (AWS) EC2 instances, such as starting or stopping them, creating or deleting them, and so on.
+
+
+### 5. Do you knows about Ansible Tower?
+```
+Ansible Tower is the enterprise version of Ansible. It allows sysadmins to deploy all of the benefits of Ansible at scale.
+```
 
 ## DOCKER
 
@@ -84,7 +114,7 @@ Dockerfile is used to create Docker images, while Docker Composr is used to mana
 
 `ENV`: Sets environment variables in Docker image.
 
-`ARG`: Defines variable that can be passed at build time using the '--build arg' flag.
+`ARG`: Defines variable that can be passed at build time using the `--build arg` flag.
 
 `LABEL`: Adds metadata to the Docker image, such as the maintainer, version, or description.
 
