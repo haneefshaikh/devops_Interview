@@ -122,7 +122,10 @@ Dockerfile is used to create Docker images, while Docker Composr is used to mana
 ## GIT
 
 ### 1. What is Git bisect, and how do you use it?
- 
+```
+The git bisect command is a powerful tool that quickly checks out a commit halfway between a known good state and a known bad state and then asks you to identify the commit as either good or bad. 
+```
+
 ### 2. What is a merge conflict in Git?
 
 
