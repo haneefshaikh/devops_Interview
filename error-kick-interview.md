@@ -37,9 +37,26 @@ If the first character is "-", the file is a hard link.
 ## SHELL SCRIPTING
 
 ### 1. Write a shell script to take an EBS snapshot.
- 
+```
+#!/bin/bash
+
+# Set your AWS region and the EBS volume ID to snapshot
+region="us-west-2"
+volume_id="vol-xxxxxxxxxxxxxx"
+
+# Get the current date and time in YYYY-MM-DD-HH-MM format
+timestamp=$(date +%Y-%m-%d-%H-%M)
+
+# Create a new EBS snapshot with a description that includes the timestamp
+aws ec2 create-snapshot --volume-id $volume_id --description "Snapshot taken at $timestamp" --region $region
+```
+
 ### 2. What does 'set -x' do in shell scripting?
- 
+```
+set -x is a command that enables the shell's debugging mode. 
+When this command is run in a shell script, the shell will print each command before executing it, 
+along with the values of any variables or parameters used in that command.
+```
 ### 3. What type of shell scripting have you written?
 
 
@@ -123,7 +140,8 @@ Dockerfile is used to create Docker images, while Docker Composr is used to mana
 
 ### 1. What is Git bisect, and how do you use it?
 ```
-The git bisect command is a powerful tool that quickly checks out a commit halfway between a known good state and a known bad state and then asks you to identify the commit as either good or bad. 
+The git bisect command is a powerful tool that quickly checks out a commit halfway between a known good state and a known bad state 
+and then asks you to identify the commit as either good or bad. 
 ```
 
 ### 2. What is a merge conflict in Git?
