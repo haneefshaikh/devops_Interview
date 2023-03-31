@@ -4,7 +4,7 @@
 
 ### 1. How do you check for multiple processes currently running in Linux?
 
-`ps -ef | grep <`PROCESS_NAME`/`SERVICE_NAME`>` also you can use `TOP` command to check the system process.
+`ps -ef | grep <PROCESS_NAME/SERVICE_NAME`>` also you can use `TOP` command to check the system process.
 
 
 ### 2. What are soft links and hard links?
