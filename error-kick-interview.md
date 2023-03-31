@@ -1,4 +1,4 @@
-# DevOps Interview Qustions From Error-Kick Round 1.
+# DevOps Interview Qustions
 
 ## LINUX
 
