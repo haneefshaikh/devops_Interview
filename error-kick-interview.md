@@ -12,7 +12,7 @@
 `HARD LINK`
 ```
 A hard link is a reference to a file on the file system that points to the same inode (index node) as the original file. 
-When you create a hard link, you create another name for the same file, 
+When you create a hard link, you create another name for the same file,
 which means that both the original file and the hard link have the same contents and metadata
 ```
 `SOFT LINK`
