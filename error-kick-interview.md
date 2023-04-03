@@ -181,13 +181,15 @@ Webhooks are commonly used to integrate different systems and automate workflows
 
 ### 1. I have a Flipkart application deployed on a 2-node EC2 machine with auto-scaling on when the load threshold exceeds 70%. In this scenario, when a third instance is launched, how does the new EC2 machine know about the Flipkart application that needs to be run?
 
-### 2. What is VPN peering, what is its purpose, and how do you deploy it?
+### 2. What is VPC peering, what is its purpose, and how do you deploy it?
 
-VPN peering is a technique used to connect two or more VPNs together, 
+VPC peering is a technique used to connect two or more VPCs together, 
 allowing users to access resources in multiple networks.
 
-The purpose of VPN peering is to provide secure and private communication between multiple VPNs, 
+The purpose of VPC peering is to provide secure and private communication between multiple VPNs, 
 making it easier for users to access resources that are distributed across different networks.
+
+Use VPC Peering service to create peering between the two VPNC's in AWS.
 
 ### 3. What are bastion nodes and NAT instances in AWS?
 
