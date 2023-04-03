@@ -10,29 +10,29 @@
 ### 2. What are soft links and hard links?
 
 `HARD LINK`
-```
+
 A hard link is a reference to a file on the file system that points to the same inode (index node) as the original file. 
 When you create a hard link, you create another name for the same file,
 which means that both the original file and the hard link have the same contents and metadata
-```
+
 `SOFT LINK`
-```
+
 A soft link, also known as a symbolic link or symlink,
 is a special type of file that points to another file or directory on the file system. 
 A soft link acts as a shortcut or alias to the original file or directory,
 which means that any changes made to the original file or directory will also affect the soft link.
-```
+
 
 ### 3. How do you identify soft links and hard links?
-```
-you can use the "ls -ltr" command in Unix-based operating systems.
+
+you can use the `ls -ltr` command in Unix-based operating systems.
 you will see detailed information about each file, including its type, permissions, owner, and group. 
 The first character in the output indicates the type of file.
 
-If the first character is "l", the file is a soft link.
+If the first character is `l`, the file is a soft link.
 
-If the first character is "-", the file is a hard link.
-```
+If the first character is `-`, the file is a hard link.
+
 
 ## SHELL SCRIPTING
 
@@ -52,11 +52,11 @@ aws ec2 create-snapshot --volume-id $volume_id --description "Snapshot taken at 
 ```
 
 ### 2. What does 'set -x' do in shell scripting?
-```
+
 set -x is a command that enables the shell's debugging mode. 
 When this command is run in a shell script, the shell will print each command before executing it, 
 along with the values of any variables or parameters used in that command.
-```
+
 ### 3. What type of shell scripting have you written?
 
 
@@ -78,15 +78,15 @@ You can also group servers based on their location or environment, such as produ
 `YAML syntax`: Ansible inventories are written in YAML syntax, so you will need to have a good understanding of this format.
 
 ### 3. What is Ansible Vault, and how can I use Vault content in the code?
-```
+
 Ansible Vault is a feature of Ansible that allows you to encrypt sensitive data, 
 such as passwords, SSH keys, and other credentials, that are needed by Ansible playbooks.
 
 To use Vault content in your code, you first need to create an encrypted file using the ansible-vault command. 
-"ansible-vault create mysecrets.yml"
+`ansible-vault create mysecrets.yml`
 You can create a new file or encrypt an existing file. Once the file is encrypted, 
 you can add it to your playbook just like any other file. 
-```
+
 
 ### 4. What Ansible modules do you know about?
 
@@ -110,9 +110,9 @@ you can add it to your playbook just like any other file.
 
 
 ### 5. Do you knows about Ansible Tower?
-```
+
 Ansible Tower is the enterprise version of Ansible. It allows sysadmins to deploy all of the benefits of Ansible at scale.
-```
+
 
 ## DOCKER
 
@@ -122,9 +122,9 @@ Ansible Tower is the enterprise version of Ansible. It allows sysadmins to deplo
 - to check the size of entire container : `docker ps --size`
  
 ### 2. what is the difference between dockerfile and docker-compose file ?
-```
+
 Dockerfile is used to create Docker images, while Docker Composr is used to manage multiple Docker containers.
-```
+
 
 ### 3. Write a Dockerfile to build a Python application image. What instructions should I take care of while writing the file?
 
@@ -150,68 +150,67 @@ Dockerfile is used to create Docker images, while Docker Composr is used to mana
 ## GIT
 
 ### 1. What is Git bisect, and how do you use it?
-```
+
 The git bisect command is a powerful tool that quickly checks out a commit halfway between a known good state and a known bad state 
 and then asks you to identify the commit as either good or bad. 
-```
+
 
 ### 2. What is a merge conflict in Git?
-```
+
 A merge conflict in Git occurs when two or more branches have made changes to the same file, 
 and Git is unable to automatically determine which changes should take precedence. 
 When you try to merge these branches, 
 Git will notify you of the conflict and ask you to resolve it manually.
-```
+
 
 ## JENKINS
 
 ### 1. What is the global tool configuration block in Jenkins?
-```
+
 Its allows administrators to configure tools that are required for the build process,
  such as JDK installations, build tools like Maven or Gradle, and source control management tools like Git or Subversion. 
 This configuration block is global, which means that the settings apply to all Jenkins jobs on the system.
-```
+
 ### 2. do you knows about Webhook?
-```
+
 A webhook is a mechanism for one application to automatically trigger an action in another application when a certain event occurs. 
 Webhooks are commonly used to integrate different systems and automate workflows.
-```
+
 
 ## AWS
 
 ### 1. I have a Flipkart application deployed on a 2-node EC2 machine with auto-scaling on when the load threshold exceeds 70%. In this scenario, when a third instance is launched, how does the new EC2 machine know about the Flipkart application that needs to be run?
 
 ### 2. What is VPN peering, what is its purpose, and how do you deploy it?
-```
+
 VPN peering is a technique used to connect two or more VPNs together, 
 allowing users to access resources in multiple networks.
 
 The purpose of VPN peering is to provide secure and private communication between multiple VPNs, 
 making it easier for users to access resources that are distributed across different networks.
-```
+
 ### 3. What are bastion nodes and NAT instances in AWS?
-```
+
 A bastion node, also known as a jump server, 
 is a special-purpose instance that is used to securely access resources in a private subnet from the internet. 
 It acts as a gateway between the public and private subnets
 
-
 A NAT instance is used to enable instances in a private subnet to communicate with the internet or other AWS services.
-```
+
 
 ## TERRAFORM
 
 ### 1. What is the 'terraform.state.lock' file?
-```
+
 The terraform.state.lock file is a lock file that is created by Terraform when it runs a state operation.
 
 When Terraform performs an operation that modifies the state file, 
 such as terraform apply or terraform destroy, it creates a lock file named terraform.state.lock in the same directory as the state file
-```
+
 ### 2. If I have created resources manually on my AWS account, what steps do I need to take to write Terraform code for my existing resources?
-```
-you can use the "import" command to import the existing resources into your Terraform configuration.
-```
+
+you can use the `terraform import` command to import the existing resources into your Terraform configuration.
+
 
 ## KUBERNETES
 
