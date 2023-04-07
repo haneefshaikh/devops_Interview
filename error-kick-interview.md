@@ -123,7 +123,7 @@ Ansible Tower is the enterprise version of Ansible. It allows sysadmins to deplo
 Dockerfile is used to create Docker images, while Docker Composr is used to manage multiple Docker containers.
 
 
-### 3. Write a Dockerfile to build a Python application image. What instructions should I take care of while writing the file?
+### 3. I want write a Dockerfile to build a Python application image. What instructions should I take care of while writing the file?
 
 `FROM`: It specifies the based image to use for a Docker image.
 
