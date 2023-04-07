@@ -44,11 +44,8 @@ If the first character is `-`, the file is a hard link.
 region="us-west-2"
 volume_id="vol-xxxxxxxxxxxxxx"
 
-# Get the current date and time in YYYY-MM-DD-HH-MM format
-timestamp=$(date +%Y-%m-%d-%H-%M)
-
 # Create a new EBS snapshot with a description that includes the timestamp
-aws ec2 create-snapshot --volume-id $volume_id --description "Snapshot taken at $timestamp" --region $region
+aws ec2 create-snapshot --volume-id $volume_id --description "Snapshot taken" --region $region
 ```
 
 ### 2. What does 'set -x' do in shell scripting?
