@@ -179,7 +179,8 @@ Webhooks are commonly used to integrate different systems and automate workflows
 
 ## AWS
 
-### 1. I have a Flipkart application deployed on a 2-node EC2 machine with auto-scaling on when the load threshold exceeds 70%. In this scenario, when a third instance is launched, how does the new EC2 machine know about the Flipkart application that needs to be run?
+### 1. I have a Flipkart application deployed on a 2-node AWS EC2 machine with enable auto-scaling-group(ASG) setting ON, when the load threshold exceeds 70% CPU. In this scenario, when a third AWS EC2 Instance is launched, how does the new (Third) AWS EC2 machine knows about the Flipkart application that needs to be run?
+Load Balancer will take care of runnig the flipkart appilication on the new third aws ec2 machine.
 
 ### 2. What is VPC peering, what is its purpose, and how do you deploy it?
 
