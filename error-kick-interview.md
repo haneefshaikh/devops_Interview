@@ -221,7 +221,33 @@ you can use the `terraform import` command to import the existing resources into
 ### 2. What is the difference between deployment and StatefulSets?
 
 ### 3. What kind of security measures have you implemented in Kubernetes?
+We recently deployed Pod Secuirty Context for our K8's cluster.
 
+A Pod security context defines the OS level security settings in the k8s manifest file and applied at the Pod/container level. 
+Using security context we can limit kernel capabilities available to the container. 
+It is defined using securityContext field in the manifest file.
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-security-context
+spec:
+  # context at POD level
+  securityContext:
+    runAsUser: 10000
+    runAsGroup: 10000
+    fsGroup: 10000
+    capabilities:
+      add: ["NET_ADMIN", "SYS_TIME"]
+  containers:
+  - name: bb
+    image: busybox
+    command: [ "sh", "-c", "sleep 1s" ]
+  # context at container level
+    securityContext:
+      allowPrivilegeEscalation: false
+ ```
 ### 4. How do I deploy an EKS cluster in AWS?
 
 ### 5. Write a Kubernetes code to create an Nginx pod.
